@@ -1,8 +1,17 @@
 #!/bin/bash
 # https://linux.die.net/man/8/ipset
 # variables
-ipset=/sbin/ipset
-iptables=/sbin/iptables
+yum update -yy >/dev/null 2>&1
+yum upgrade -yy >/dev/null 2>&1
+apt update -yy >/dev/null 2>&1
+apt upgrade -yy >/dev/null 2>&1
+
+yum install wget tar ipset curl -yy
+apt install wget tar ipset curl -yy
+ipset=`which ipset`
+iptables=`which iptables`
+
+iptables -F
 
 # Replace with your path to blackip.txt
 ips="$1"
@@ -35,3 +44,4 @@ $iptables -I INPUT -m set --match-set blackip src,dst -j DROP
 $iptables -I FORWARD -m set --match-set blackip src,dst -j DROP
 echo "done"
 
+iptables -nL --line-number
