@@ -1,0 +1,41 @@
+name: 🥳 New Black Ip Lists
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    #  every day at 5:30 
+      - cron:  '30 5 * * *'
+  
+  workflow_dispatch:
+
+jobs:
+  templates:
+    runs-on: ubuntu-latest
+    if: github.repository == 'hktalent/blackIps'
+    steps:
+      - uses: actions/checkout@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install Dependences
+        run: sudo apt install -yy wget git tar curl
+
+      - name: Generate new Black Ip Lists
+        id: new-additions
+        run: |
+          git pull
+          chmod +x init.sh
+          ./init.sh
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit --allow-empty -m "Auto update new Black Ip Lists [$(date)] :robot:" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
