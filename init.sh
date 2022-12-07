@@ -23,6 +23,16 @@ wget -c -O shodan-dorks.md 'https://raw.githubusercontent.com/lothos612/shodan/m
 git add shodan-dorks.md
 wget -c -O github-dorks.txt https://raw.githubusercontent.com/techgaun/github-dorks/master/github-dorks.txt
 git add github-dorks.txt
+wget -c -O google_Dorks.txt https://raw.githubusercontent.com/BullsEye0/google_dork_list/master/google_Dorks.txt
+git add google_Dorks.txt
+
+wget -c -O movie_Dorks.txt https://raw.githubusercontent.com/cipher387/Dorks-collections-list/main/movie.txt
+wget -c -O onion_Dorks.txt https://raw.githubusercontent.com/cipher387/Dorks-collections-list/main/onion.txt
+wget -c -O aws_Dorks.txt https://raw.githubusercontent.com/cipher387/Dorks-collections-list/main/aws.txt
+wget -c -O azure_Dorks.txt https://raw.githubusercontent.com/cipher387/Dorks-collections-list/main/azure.tx
+wget -c -O cctv_Dorks.txt https://raw.githubusercontent.com/cipher387/Dorks-collections-list/main/cctv.txt
+wget -c -O googslecloud_Dorks.txt https://raw.githubusercontent.com/cipher387/Dorks-collections-list/main/googslecloud.txt
+git add azure_Dorks.txt aws_Dorks.txt cctv_Dorks.txt googslecloud_Dorks.txt movie_Dorks.txt onion_Dorks.txt
 
 # https://www.ipdeny.com/ipblocks/data/countries/all-zones.tar.gz
 # https://www.ipdeny.com/ipv6/ipaddresses/blocks/ipv6-all-zones.tar.gz
