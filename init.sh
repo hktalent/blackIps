@@ -15,5 +15,14 @@ ls -lah blackIpList.tar.gz
 rm -rf ip1.txt
 git add blackIpList.tar.gz
 
+wget -c -O bug-bounty-dorks.txt https://raw.githubusercontent.com/sushiwushi/bug-bounty-dorks/master/dorks.txt
+git add bug-bounty-dorks.txt
+
+# wget -c -O shodan-dorks.md 'https://raw.githubusercontent.com/lothos612/shodan/main/Shodan%20Dorks.jex'
+wget -c -O shodan-dorks.md 'https://raw.githubusercontent.com/lothos612/shodan/main/README.md'
+git add shodan-dorks.md
+wget -c -O github-dorks.txt https://raw.githubusercontent.com/techgaun/github-dorks/master/github-dorks.txt
+git add github-dorks.txt
+
 # https://www.ipdeny.com/ipblocks/data/countries/all-zones.tar.gz
 # https://www.ipdeny.com/ipv6/ipaddresses/blocks/ipv6-all-zones.tar.gz
