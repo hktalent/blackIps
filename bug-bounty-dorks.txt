@@ -90,3 +90,4 @@ site:*.au responsible disclosure
 e disclosure
 site:*.be responsible disclosure
 site:*.au responsible disclosure
+site:*/security.txt "bounty"
