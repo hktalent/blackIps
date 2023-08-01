@@ -91,3 +91,5 @@ e disclosure
 site:*.be responsible disclosure
 site:*.au responsible disclosure
 site:*/security.txt "bounty"
+url:bug bounty intext:"₹"
+inurl:responsible disclosure intext:"INR"
