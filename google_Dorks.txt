@@ -13771,3 +13771,9 @@ zentrack/index.php?configFile=
 “your password is” filetype:log
 ” -FrontPage-” ext:pwd inurl:(service | authors | administrators | users)
 ” inurl:”.php?cat=” intext:”/store/”
+H= “PhotoPost PHP”
+/zipndownload.php?PP_PATH= “PhotoPost PHP 4.6”
+/zipndownload.php?PP_PATH= PhotoPost PHP 4.6
+/zipndownload.php?PP_PATH= “Powered by: PhotoPost PHP 4.6”
+/zipndownload.php?PP_PATH= Powered by: PhotoPost PHP 4.6
+Zixmail inurl:/s/login?
