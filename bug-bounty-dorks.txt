@@ -128,3 +128,4 @@ intext:"CVSS score" AND "eligible for a reward" -hackerone -bugcrowd
 inurl:/security/index.html intext:bounty
 inurl:/legal/security intext:monetary
 "security.txt" AND "PGP" AND (bounty OR reward)
+filetype:txt security reward rewards -"we currently" -"we do not" -"not offer"
