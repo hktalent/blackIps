@@ -88,3 +88,54 @@ filename:discord_backup_codes.txt
 extension:yaml cloud.redislabs.com
 extension:json cloud.redislabs.com
 DATADOG_API_KEY language:shell
+
+# Git hosting and CI/CD tokens
+"github_pat_"
+"ghp_"
+"gho_" OR "ghu_" OR "ghs_" OR "ghr_"
+"glpat-"
+"gloas-" OR "gldt-"
+"glrt-" OR "glrtr-" OR "glcbt-" OR "glptt-"
+
+# Package registry tokens
+filename:.npmrc "_authToken="
+"pypi-" filename:.pypirc
+"NUGET_API_KEY" path:.env
+"GEM_HOST_API_KEY" path:.env
+
+# AI and machine learning provider credentials
+"OPENAI_API_KEY" path:.env
+"ANTHROPIC_API_KEY" path:.env
+"sk-ant-"
+"HF_TOKEN" path:.env
+"hf_" filename:token path:huggingface
+
+# Cloud, infrastructure, and deployment credentials
+"CLOUDFLARE_API_TOKEN" path:.env
+"DIGITALOCEAN_ACCESS_TOKEN" path:.env
+"dop_v1_"
+"PULUMI_ACCESS_TOKEN" path:.env
+"TFE_TOKEN" path:.env
+"atlasv1" filename:credentials.tfrc.json
+"VERCEL_TOKEN" path:.env
+"SUPABASE_SERVICE_ROLE_KEY" path:.env
+"SENTRY_AUTH_TOKEN" path:.env
+"sntrys_"
+
+# Payment and communications credentials
+"sk_live_" OR "rk_live_"
+"SENDGRID_API_KEY" path:.env
+"TWILIO_AUTH_TOKEN" path:.env
+"SLACK_BOT_TOKEN" path:.env
+"DISCORD_BOT_TOKEN" path:.env
+
+# Database connection strings and service accounts
+"mongodb+srv://" password
+"postgres://" password
+filename:service-account.json "private_key_id" "private_key"
+"GOOGLE_PRIVATE_KEY" path:.env
+
+# Modern private key formats
+"-----BEGIN OPENSSH PRIVATE KEY-----"
+"-----BEGIN PRIVATE KEY-----"
+"AGE-SECRET-KEY-1"
