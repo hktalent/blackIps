@@ -139,3 +139,90 @@ filename:service-account.json "private_key_id" "private_key"
 "-----BEGIN OPENSSH PRIVATE KEY-----"
 "-----BEGIN PRIVATE KEY-----"
 "AGE-SECRET-KEY-1"
+ring, telemetry, incident-response, and code-quality credentials
+"NEW_RELIC_LICENSE_KEY" path:.env
+"NEW_RELIC_API_KEY" path:.env
+"GRAFANA_API_KEY" path:.env
+"HONEYCOMB_API_KEY" path:.env
+"SPLUNK_HEC_TOKEN" path:.env
+"DT_API_TOKEN" path:.env
+"PAGERDUTY_API_TOKEN" path:.env
+"OPSGENIE_API_KEY" path:.env
+"SNYK_TOKEN" path:.env
+"SONAR_TOKEN" path:.env
+"CODECOV_TOKEN" path:.env
+
+# Category: private-keys
+# Cryptographic private keys and decryption keys
+extension:pem private
+extension:ppk private
+filename:id_rsa or filename:id_dsa
+filename:master.key path:config
+"-----BEGIN OPENSSH PRIVATE KEY-----"
+"-----BEGIN PRIVATE KEY-----"
+"-----BEGIN RSA PRIVATE KEY-----"
+"-----BEGIN EC PRIVATE KEY-----"
+"-----BEGIN PGP PRIVATE KEY BLOCK-----"
+"AGE-SECRET-KEY-1"
+
+# Category: saas
+# SaaS, AI, payment, and communications credentials
+PT_TOKEN language:bash
+filename:.bashrc mailchimp
+extension:json api.forecast.io
+jsforce extension:js conn.login
+SF_USERNAME salesforce
+shodan_api_key language:python
+shodan_api_key language:shell
+shodan_api_key language:json
+shodan_api_key language:ruby
+extension:avastlic "support.avast.com"
+xoxp OR xoxb
+"api_hash" "api_id"
+"https://hooks.slack.com/services/"
+"OPENAI_API_KEY" path:.env
+"ANTHROPIC_API_KEY" path:.env
+"sk-ant-"
+"HF_TOKEN" path:.env
+"hf_" filename:token path:huggingface
+"sk_live_" OR "rk_live_"
+"SENDGRID_API_KEY" path:.env
+"TWILIO_AUTH_TOKEN" path:.env
+"SLACK_BOT_TOKEN" path:.env
+"DISCORD_BOT_TOKEN" path:.env
+
+# Category: system
+# Operating system, shell, server, IDE, and client configuration secrets
+filename:.htpasswd
+filename:.bashrc password
+filename:.netrc password
+filename:_netrc password
+filename:filezilla.xml Pass
+filename:recentservers.xml Pass
+filename:idea14.key
+filename:config irc_pass
+filename:proftpdpasswd
+filename:ventrilo_srv.ini
+[WFClient] Password= extension:ica
+filename:server.cfg rcon password
+filename:.bash_history
+filename:.cshrc
+filename:.history
+filename:.sh_history
+filename:sshd_config
+filename:dhcpd.conf
+filename:shadow path:etc
+filename:passwd path:etc
+filename:sftp-config.json
+filename:.esmtprc password
+filename:logins.json
+filename:CCCam.cfg
+msg nickserv identify filename:config
+filename:.ftpconfig
+filename:.remote-sync.json
+filename:sftp.json path:.vscode
+filename:WebServers.xml
+filename:jupyter_notebook_config.json
+filename:github-recovery-codes.txt
+filename:gitlab-recovery-codes.txt
+filename:discord_backup_codes.txt
